@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>公式プレゼント - 豪華特典をお届け</title>
+    <title>公式プレゼント</title>
 
-
+```
 <!-- TikTok Pixel Code Start -->
 <script>
 !function (w, d, t) {
@@ -28,8 +28,8 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     }
 
     body {
-        font-family: 'Hiragino Sans', 'Yu Gothic', 'Meiryo', sans-serif;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
         min-height: 100vh;
         display: flex;
         justify-content: center;
@@ -39,222 +39,180 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 
     .container {
         background: white;
-        border-radius: 24px;
-        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        max-width: 480px;
+        border-radius: 20px;
+        padding: 60px 40px;
+        max-width: 500px;
         width: 100%;
-        overflow: hidden;
-        animation: slideUp 0.6s ease-out;
-    }
-
-    @keyframes slideUp {
-        from {
-            opacity: 0;
-            transform: translateY(30px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        padding: 60px 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
         text-align: center;
-        position: relative;
-        overflow: hidden;
     }
 
-    .header::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
-        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-        animation: rotate 20s linear infinite;
-    }
-
-    @keyframes rotate {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-    }
-
-    .gift-icon {
-        width: 140px;
-        height: 140px;
+    .icon {
+        width: 150px;
+        height: 150px;
         margin: 0 auto 30px;
-        position: relative;
-        z-index: 1;
-        animation: float 3s ease-in-out infinite;
-    }
-
-    @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-15px); }
-    }
-
-    .gift-box {
-        width: 100%;
-        height: 100%;
-        position: relative;
-    }
-
-    .box-body {
-        width: 110px;
-        height: 110px;
-        background: white;
-        border-radius: 14px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -40%);
-        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-    }
-
-    .ribbon-v {
-        width: 35px;
-        height: 110px;
-        background: #ff6b6b;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -40%);
-        border-radius: 5px;
-    }
-
-    .ribbon-h {
-        width: 110px;
-        height: 35px;
-        background: #ff6b6b;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -40%);
-        border-radius: 5px;
-    }
-
-    .bow {
-        width: 60px;
-        height: 30px;
-        background: #ff6b6b;
+        background: linear-gradient(135deg, #ffc4d6 0%, #ffb3c9 100%);
         border-radius: 50%;
-        position: absolute;
-        top: 12%;
-        left: 50%;
-        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 4px solid #888;
+        box-shadow: 0 5px 20px rgba(255, 182, 193, 0.3);
     }
 
-    .bow::before,
-    .bow::after {
+    .envelope {
+        width: 80px;
+        height: 60px;
+        position: relative;
+    }
+
+    .envelope::before {
         content: '';
-        width: 30px;
-        height: 30px;
-        background: #ff6b6b;
-        border-radius: 50%;
         position: absolute;
-        top: 0;
+        width: 80px;
+        height: 60px;
+        background: white;
+        border: 3px solid white;
     }
 
-    .bow::before {
-        left: -18px;
+    .envelope::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: -3px;
+        left: -3px;
+        border-left: 43px solid transparent;
+        border-right: 43px solid transparent;
+        border-top: 30px solid white;
     }
 
-    .bow::after {
-        right: -18px;
+    .heart {
+        position: absolute;
+        width: 20px;
+        height: 18px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .heart::before,
+    .heart::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 18px;
+        background: #ff69b4;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .heart::before {
+        left: 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+    }
+
+    .heart::after {
+        right: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
     }
 
     h1 {
-        color: white;
-        font-size: 36px;
-        font-weight: bold;
-        margin-bottom: 15px;
-        position: relative;
-        z-index: 1;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #333;
+        letter-spacing: 2px;
     }
 
     .subtitle {
-        color: rgba(255, 255, 255, 0.95);
-        font-size: 17px;
-        position: relative;
-        z-index: 1;
-    }
-
-    .content {
-        padding: 40px 30px;
-    }
-
-    .cta-button {
-        width: 100%;
-        padding: 20px;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        border: none;
-        border-radius: 16px;
-        font-size: 20px;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
-        margin-bottom: 25px;
-    }
-
-    .cta-button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 12px 28px rgba(102, 126, 234, 0.5);
-    }
-
-    .cta-button:active {
-        transform: translateY(0);
-    }
-
-    .info-section {
-        background: #f8f9fa;
-        padding: 20px;
-        border-radius: 12px;
-    }
-
-    .info-title {
-        font-size: 14px;
-        font-weight: bold;
+        font-size: 16px;
         color: #666;
-        margin-bottom: 10px;
-    }
-
-    .info-text {
-        font-size: 13px;
-        color: #888;
+        margin-bottom: 40px;
         line-height: 1.6;
     }
 
-    .sparkle {
-        position: absolute;
-        width: 5px;
-        height: 5px;
+    .cta-button {
+        display: inline-block;
+        padding: 18px 60px;
         background: white;
-        border-radius: 50%;
-        animation: sparkle 2s ease-in-out infinite;
+        color: #333;
+        text-decoration: none;
+        border: 3px solid #333;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        margin-bottom: 40px;
     }
 
-    @keyframes sparkle {
-        0%, 100% { opacity: 0; transform: scale(0); }
-        50% { opacity: 1; transform: scale(1); }
+    .cta-button:hover {
+        background: #333;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .sparkle:nth-child(1) { top: 15%; left: 15%; animation-delay: 0s; }
-    .sparkle:nth-child(2) { top: 25%; right: 20%; animation-delay: 0.5s; }
-    .sparkle:nth-child(3) { bottom: 25%; left: 20%; animation-delay: 1s; }
-    .sparkle:nth-child(4) { top: 45%; right: 15%; animation-delay: 1.5s; }
-    .sparkle:nth-child(5) { bottom: 35%; right: 25%; animation-delay: 0.7s; }
-    .sparkle:nth-child(6) { top: 55%; left: 18%; animation-delay: 1.2s; }
+    .legal-info {
+        text-align: left;
+        font-size: 12px;
+        color: #666;
+        line-height: 1.8;
+        border-top: 1px solid #eee;
+        padding-top: 30px;
+    }
 
-    @keyframes pulse {
-        0% { transform: scale(1); }
-        50% { transform: scale(1.02); }
-        100% { transform: scale(1); }
+    .legal-info h3 {
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .legal-info p {
+        margin-bottom: 8px;
+    }
+
+    .legal-info a {
+        color: #666;
+        text-decoration: none;
+    }
+
+    @media (max-width: 480px) {
+        .container {
+            padding: 40px 25px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        .icon {
+            width: 120px;
+            height: 120px;
+        }
+
+        .envelope {
+            width: 65px;
+            height: 50px;
+        }
+
+        .envelope::before {
+            width: 65px;
+            height: 50px;
+        }
+
+        .envelope::after {
+            border-left-width: 35px;
+            border-right-width: 35px;
+            border-top-width: 25px;
+        }
+
+        .cta-button {
+            padding: 15px 45px;
+            font-size: 16px;
+        }
     }
 </style>
 ```
@@ -262,54 +220,40 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="sparkle"></div>
-            <div class="sparkle"></div>
-            <div class="sparkle"></div>
-            <div class="sparkle"></div>
-            <div class="sparkle"></div>
-            <div class="sparkle"></div>
+        <div class="icon">
+            <div class="envelope">
+                <div class="heart"></div>
+            </div>
+        </div>
 
 ```
-        <div class="gift-icon">
-            <div class="gift-box">
-                <div class="box-body"></div>
-                <div class="ribbon-v"></div>
-                <div class="ribbon-h"></div>
-                <div class="bow"></div>
-            </div>
-        </div>
+    <h1>公式プレゼント</h1>
+    
+    <p class="subtitle">公式LINE追加で今すぐお届けします。</p>
+    
+    <a href="https://lin.ee/fU3ofI4" class="cta-button" onclick="trackButtonClick()">今すぐ受け取る</a>
+    
+    <script>
+    function trackButtonClick() {
+        // TikTok Pixelでボタンクリックをトラッキング
+        if (typeof ttq !== 'undefined') {
+            ttq.track('ClickButton');
+        }
+    }
+    </script>
+    
+    <div class="legal-info">
+        <h3>【特定商取引法に基づく表記・運営者情報】</h3>
+        <p>・事業者名: 株式会社gift</p>
+        <p>・所在地: 〒141-0022 東京都品川区東五反田2-5-2 THE CASK GOTANDA</p>
+        <p>・お問い合わせ: <a href="mailto:fararuku@instaddr.win">fararuku@instaddr.win</a></p>
+        <p>※お電話でのお問い合わせは受け付けておりません。上記メールまでご連絡ください。</p>
         
-        <h1>公式プレゼント</h1>
-        <p class="subtitle">公式LINE追加で今すぐお届けします</p>
-    </div>
-
-    <div class="content">
-        <button class="cta-button" onclick="receiveCampaign()">
-            今すぐ受け取る
-        </button>
-
-        <div class="info-section">
-            <div class="info-title">【特定商取引法に基づく表記・運営者情報】</div>
-            <div class="info-text">
-                • 事業者名: 株式会社gift<br>
-                • 所在地: 〒141-0022 東京都品川区東五反田2-5-2 THE CASK GOTANDA<br>
-                • お問い合わせ: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5f393e2d3e2d2a342a1f36312c2b3e3b3b2d71283631">[email&#160;protected]</a><br>
-                ※お電話でのお問い合わせは受け付けておりません。上記メールまでご連絡ください。
-            </div>
-            <div class="info-title" style="margin-top: 15px;">【個人情報の取り扱いについて】</div>
-            <div class="info-text">
-                当サイトは、お客様の個人情報を適切に保護することの重要性を認識し、法令遵守および安全な取り扱いに努めます。取得した個人情報は、お問い合わせへの対応およびサービスのご案内のみに利用し、法令に基づく場合を除き第三者への提供は行いません。
-            </div>
-        </div>
+        <h3 style="margin-top: 20px;">【個人情報の取り扱いについて】</h3>
+        <p>当サイトは、お客様の個人情報を適切に保護することの重要性を認識し、法令遵守および安全な取り扱いに努めます。取得した個人情報は、お問い合わせへの対応およびサービスのご案内のみに利用し、法令に基づく場合を除き第三者への提供は行いません。</p>
     </div>
 </div>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    function receiveCampaign() {
-        window.location.href = 'https://lin.ee/fU3ofI4';
-    }
-
-    // ボタンにホバー時のパルスエフェクトを追加
-    const button = document.querySelector('.cta-button');
 ```
+
+</body>
+</html>
